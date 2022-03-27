@@ -26,7 +26,8 @@
     }
   }
 
-  p {
+  q {
+    display: block;
     margin-bottom: rem(25);
     font-size: rem(18);
     line-height: rem(30);
@@ -38,17 +39,18 @@
     }
   }
 
-  span {
+  div {
     display: block;
     height: rem(17);
     margin-bottom: rem(20);
-    background-image: url('/images/pattern-divider-mobile.svg');
+    background-image: url('../images/pattern-divider-mobile.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     color: var(--gray-blue);
 
     @include breakpoint-up(medium){
+      background-image: url('../images/pattern-divider-desktop.svg');
       height: rem(18);
     }
   }
@@ -63,7 +65,7 @@
     border: 0;
     border-radius: 50%;
     background-color: var(--neon-green);
-    background-image: url('/images/icon-dice.svg');
+    background-image: url('../images/icon-dice.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: rem(26) rem(26);
