@@ -1,0 +1,52 @@
+@use '../util' as *;
+
+.advice {
+  position: relative;
+  border-radius: rem(15);
+  padding-block: rem(44);
+  padding-inline: rem(29);
+  background-color: var(--dk-gray-blue);
+  text-align: center;
+
+
+  h1 {
+    margin-bottom: rem(35);
+    font-size: rem(10);
+    text-transform: uppercase;
+    color: var(--neon-green);
+  }
+
+  p {
+    margin-bottom: rem(39);
+    font-size: rem(19);
+    color: var(--lt-cyan);
+  }
+
+  span {
+    display: block;
+    height: rem(17);
+    margin-bottom: rem(27);
+    background-image: url('/images/pattern-divider-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    color: var(--gray-blue);
+  }
+
+  button {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: rem(66);
+    width: rem(66);
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--neon-green);
+    background-image: url('/images/icon-dice.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: rem(26) rem(26);
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,24 @@
+@use '../util' as *;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: var(--font-body);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: rem(28);
+  font-weight: 800;
+  background-color: var(--dk-blue);
+}
