@@ -3,8 +3,9 @@
 .container {
   max-width: rem(540);
   margin-inline: rem(18);
-  @include breakpoint-up(medium) {
+
+  @include breakpoint-up(medium){
+    width: 100%;
     margin: 0 auto;
   }
-  
 }

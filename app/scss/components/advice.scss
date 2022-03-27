@@ -8,29 +8,49 @@
   background-color: var(--dk-gray-blue);
   text-align: center;
 
+  @include breakpoint-up(medium){
+    padding-inline: rem(48);
+    padding-block: rem(52);
+  }
 
   h1 {
     margin-bottom: rem(35);
     font-size: rem(10);
     text-transform: uppercase;
+    letter-spacing: rem(5);
     color: var(--neon-green);
+
+    @include breakpoint-up(medium){
+      margin-bottom: rem(37);
+      font-size: rem(11);
+    }
   }
 
   p {
-    margin-bottom: rem(39);
-    font-size: rem(19);
+    margin-bottom: rem(25);
+    font-size: rem(18);
+    line-height: rem(30);
     color: var(--lt-cyan);
+
+    @include breakpoint-up(medium){
+      margin-bottom: rem(40);
+      font-size: rem(23);
+    }
   }
 
   span {
     display: block;
     height: rem(17);
-    margin-bottom: rem(27);
+    margin-bottom: rem(20);
     background-image: url('/images/pattern-divider-mobile.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     color: var(--gray-blue);
+
+    @include breakpoint-up(medium){
+      height: rem(18);
+    }
   }
 
   button {
@@ -47,6 +67,11 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: rem(26) rem(26);
+    transition: box-shadow 300ms ease-in-out;
     cursor: pointer;
+  }
+
+  button:hover{
+    box-shadow: 0 rem(1) rem(20) var(--neon-green);
   }
 }
